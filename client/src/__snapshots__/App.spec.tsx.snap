@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DefaultButton matches snapshot 1`] = `
+<div>
+  <div
+    class="app"
+  >
+    <h3>
+      strParentState: "
+      "
+    </h3>
+    <button>
+      Click Me
+    </button>
+  </div>
+</div>
+`;

@@ -1,0 +1,47 @@
+/*====================== Accordion ======================*/
+.accordion-item-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.accordion-control-click {
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  color: #444;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
+}
+/*prettier-ignore*/
+.accordion-control-click:hover, .accordion-control-click-opened {
+  background-color: #ccc;
+}
+.accordion-control-click-closed {
+  background-color: #eee;
+}
+/*prettier-ignore*/
+.chevron-icon-wrapper-closed, .chevron-icon-wrapper-opened {
+  margin-left: auto;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+.chevron-icon-wrapper-opened {
+  transform: rotate(-90deg);
+}
+.accordion-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+/*========================= misc =========================*/
+.app {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.view-container {
+  padding: 20px;
+}
+.ipsum-content {
+  margin-bottom: 20px;
+}
