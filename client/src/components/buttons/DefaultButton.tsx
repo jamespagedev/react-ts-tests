@@ -1,16 +1,10 @@
 import React from 'react';
 
-interface Props {
-  btnText: string;
-  updateParentState: () => void;
-}
-
-function DefaultButton({btnText, updateParentState}: Props): JSX.Element {
+function DefaultButton(): JSX.Element {
   function handleButtonClick() {
-    console.log(btnText);
-    updateParentState();
+    console.log('Default Button Clicked');
   }
-  return <button onClick={handleButtonClick}>{btnText}</button>;
+  return <button onClick={handleButtonClick}>Click Me</button>;
 }
 
 export default DefaultButton;

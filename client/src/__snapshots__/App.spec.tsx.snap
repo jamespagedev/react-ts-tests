@@ -5,10 +5,6 @@ exports[`DefaultButton matches snapshot 1`] = `
   <div
     class="app"
   >
-    <h3>
-      strParentState: "
-      "
-    </h3>
     <button>
       Click Me
     </button>
