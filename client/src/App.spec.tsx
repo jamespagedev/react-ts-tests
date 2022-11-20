@@ -1,12 +1,11 @@
 import React from 'react';
-import {render, screen} from '@testing-library/react';
+import {render} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from './App';
 
 const btnText = 'Click Me';
 const displayDefaultButtonTextBeforeClick = 'strParentState: ""';
 const displayDefaultButtonTextAfterClick = 'strParentState: "Default Button"';
-const mockUpdateParentStateFn = jest.fn();
 function TestContainer(): JSX.Element {
   return <App />;
 }
@@ -19,12 +18,12 @@ describe('DefaultButton', () => {
     const {container} = render(<TestContainer />);
     expect(container).toMatchSnapshot();
   });
-  it('default button click updates text', async () => {
+  it('default button click updates text', () => {
     const testComponent = render(<TestContainer />);
     const defaultBtn = testComponent.getByRole('button', {name: btnText});
     const displayTextBeforeClick = testComponent.getByText(displayDefaultButtonTextBeforeClick);
     expect(displayTextBeforeClick).toBeInTheDocument();
-    await userEvent.click(defaultBtn);
+    userEvent.click(defaultBtn);
     const displayTextAfterClick = testComponent.getByText(displayDefaultButtonTextAfterClick);
     expect(displayTextAfterClick).toBeInTheDocument();
   });

@@ -19,6 +19,6 @@
     "target": "es5",
     "useUnknownInCatchVariables": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "jest.config.js", "jest.config.ts", "src/**/*.spec*"]
+  "include": ["src", "jest.config.ts", "test", "**/*.[jt]s?(x)"],
+  "exclude": ["node_modules"]
 }
