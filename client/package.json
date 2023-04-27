@@ -68,7 +68,7 @@
     "prettier:fix": "npx prettier --write .",
     "start": "react-scripts start",
     "test": "cross-env BABEL_ENV=test jest",
-    "test:coverage": "cross-env BABEL_ENV=test jest -- --coverage",
+    "test:coverage": "cross-env BABEL_ENV=test jest --coverage",
     "test:jest:watch": "cross-env BABEL_ENV=test jest --watch"
   },
   "version": "0.1.0"
